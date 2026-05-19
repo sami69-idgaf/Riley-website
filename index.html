@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate SD Mobile Detail</title>
+  <meta name="description" content="San Diego's most trusted mobile detailer. Ceramic coating, paint correction, full detail. Gtechniq Certified. Fully Insured." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a href="#" class="hdr__logo">
+      <img src="footerlogo.png" alt="Elevate SD Mobile" class="hdr__logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="hdr__logo-fb" style="display:none">Elevate SD</span>
+    </a>
+
+    <nav class="hdr__nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+    </nav>
+
+<a href="tel:+18582642774" class="hdr__phone">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.09 6.09l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </svg>
+  (858) 264-2774
+</a>
+    <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mnav" id="mnav" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#quote">Get a Quote</a>
+  </nav>
+
+  <div class="hdr__bar" id="hdr-bar" role="progressbar" aria-hidden="true"></div>
+</header>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+
+    <!-- Left copy -->
+    <div class="hero__left">
+      <p class="eyebrow">↑ We Bring Everything — Water, Power &amp; Professional-Grade Products</p>
+      <h1>San Diego's<br>Most <em>Trusted</em><br>Mobile Detailer</h1>
+      <p class="hero__tagline"><em>We Come to<br>You.</em></p>
+      <p class="hero__sub">Professional mobile detailing at your home or office. We arrive fully equipped — our own water, our own power, everything we need. Nothing required from you except your vehicle. Certified. Insured. 5-star rated across San Diego County.</p>
+    </div>
+
+    <!-- Quote form -->
+    <div class="hero__form" id="quote">
+      <p class="form__title">Get Your Free Quote</p>
+      <p class="form__note">Tell us about your vehicle and we'll get back to you within the hour.</p>
+
+      <form id="hform" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+        <input type="hidden" name="subject" value="New Quote – Elevate SD" />
+
+        <div class="fg"><input type="text"  name="name"    placeholder="Your Name"           required /></div>
+        <div class="fg"><input type="tel"   name="phone"   placeholder="Phone Number"        required /></div>
+        <div class="frow">
+          <div class="fg"><input type="email" name="email" placeholder="Email Address"       required /></div>
+          <div class="fg"><input type="text"  name="zip"   placeholder="ZIP Code" maxlength="5" required /></div>
+        </div>
+        <div class="fg"><input type="text"  name="vehicle" placeholder="Vehicle Make &amp; Model" required /></div>
+        <div class="fg">
+          <select name="service" required>
+            <option value="" disabled selected>Choose a service…</option>
+            <option>Full Detail</option>
+            <option>Ceramic Coating</option>
+            <option>Paint Correction</option>
+            <option>Interior Only</option>
+            <option>Exterior Only</option>
+            <option>Not Sure — Need Advice</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--blue btn--full">Get My Free Quote →</button>
+        <p class="form__consent">By submitting you agree to be contacted about your quote. full approved.</p>
+      </form>
+
+      <div class="form__ok" id="hok" style="display:none">
+        <div class="ok__icon">✓</div>
+        <h3>Request Received!</h3>
+        <p>We'll reach out within the hour.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TRUST BAR
+══════════════════════════════════════ -->
+<section class="trust-bar" aria-label="Trust indicators">
+  <div class="wrap trust-bar__in">
+
+    <div class="ti">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <div class="ti-text">
+        <span>75 Five-Star Reviews</span>
+        <small>Verified Google ratings</small>
+      </div>
+    </div>
+
+    <div class="ti">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 17h14l-1.5-5h-11z"/>
+        <path d="M7 12l1.5-4h7L17 12"/>
+        <circle cx="8" cy="17" r="1.5"/>
+        <circle cx="16" cy="17" r="1.5"/>
+      </svg>
+      <div class="ti-text">
+        <span>400+ Cars Detailed</span>
+        <small>Across San Diego County</small>
+      </div>
+    </div>
+
+    <div class="ti">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <div class="ti-text">
+        <span>Fully Insured</span>
+        <small>Your vehicle is fully protected</small>
+      </div>
+    </div>
+
+    <div class="ti">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="12" cy="8" r="6"/>
+        <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+      </svg>
+      <div class="ti-text">
+        <span>Gtechniq Certified</span>
+        <small>Professional-grade products only</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section class="services sec" id="services">
+  <div class="wrap">
+    <p class="label">OUR SERVICES</p>
+    <h2>What Does Your Vehicle<br>Need?</h2>
+    <p class="sec__sub">Every service performed with professional-grade products and meticulous attention to detail.</p>
+
+    <div class="svcs">
+
+      <!-- Full Detail -->
+      <div class="svc-card fade d1">
+        <div class="svc-card__icon">✦</div>
+        <h3>Full Detail</h3>
+        <p>A complete interior and exterior detail — every surface cleaned, protected and restored.</p>
+        <ul>
+          <li>Interior vacuum — carpet, floor mats, seats &amp; all compartments</li>
+          <li>Clean, sanitize &amp; protect — dash, infotainment, door panels &amp; all surfaces</li>
+          <li>UV protectant applied to all interior trim</li>
+          <li>Steam extraction on all seats and carpets</li>
+          <li>Leather clean, sanitize &amp; protect (if applicable)</li>
+          <li>Exterior hand wash with DI water &amp; clay mitt treatment</li>
+          <li>Wheel faces, barrels &amp; wells cleaned; tires degreased &amp; dressed</li>
+          <li>Paint sealant — 9–12 months protection</li>
+        </ul>
+        <div class="svc-spacer"></div>
+        <div class="svc-price">Starting from <strong>$355</strong></div>
+      </div>
+
+      <!-- Ceramic Coating — Featured -->
+      <div class="svc-card svc-card--feat fade d2">
+        <div class="feat-badge">Most Popular</div>
+        <div class="svc-card__icon">◈</div>
+        <h3>Ceramic Coating</h3>
+        <p>Professional-grade ceramic coating for long-term paint protection — built for San Diego's coastal conditions.</p>
+        <ul>
+          <li>Paint correction included — 1, 2 or 3-step based on package</li>
+          <li>Up to 5 years hydrophobic paint protection</li>
+          <li>Applied to paint, rims, trim &amp; glass</li>
+          <li>Shields against UV rays, salt air &amp; environmental contaminants</li>
+          <li>Optional upgrade — up to 7 years protection available</li>
+        </ul>
+        <div class="svc-spacer"></div>
+        <div class="svc-price svc-price--feat">Starting from <strong>$685</strong></div>
+      </div>
+
+      <!-- Exterior Detail -->
+      <div class="svc-card fade d3">
+        <div class="svc-card__icon">◉</div>
+        <h3>Exterior Detail</h3>
+        <p>A thorough exterior treatment — decontaminated, cleaned and protected from the outside in.</p>
+        <ul>
+          <li>Exterior hand wash with DI water &amp; pH-balanced shampoo</li>
+          <li>Clay mitt treatment to decontaminate &amp; remove paint fallout</li>
+          <li>Wheel faces, barrels &amp; wells cleaned; tires degreased &amp; dressed</li>
+          <li>Ceramic spray protectant applied — approx. 30-day protection</li>
+        </ul>
+        <div class="svc-spacer"></div>
+        <div class="svc-price">Starting from <strong>$155</strong></div>
+      </div>
+
+    </div>
+
+    <!-- Bridge recommendation line -->
+    <div class="svc-bridge fade">
+      <div class="svc-bridge__text">
+        <span class="svc-bridge__icon">💬</span>
+        <p>Not sure which service fits your vehicle? Fill out the form — Riley will personally recommend exactly what your car needs.</p>
+      </div>
+      <a href="#bquote" class="btn btn--blue">Get a Personal Recommendation →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     RESULTS / BEFORE & AFTER
+══════════════════════════════════════ -->
+<section class="transforms sec" id="results">
+  <div class="wrap">
+    <p class="label">THE WORK</p>
+    <h2>Real Results.<em><br>Real San Diego Vehicles.</em></h2>
+
+    <div class="photo-grid">
+
+      <div class="pg-item ba-wrap">
+        <div class="ba-before"><img src="bmw.jpg" alt="BMW before detailing" /></div>
+        <div class="ba-after"><img src="bmwbefore.jpg" alt="BMW after detailing" /></div>
+        <div class="ba-handle">
+          <div class="ba-btn">
+            <div class="ba-arrow ba-arrow--l"></div>
+            <div class="ba-arrow ba-arrow--r"></div>
+          </div>
+        </div>
+        <div class="ba-tag ba-tag--l">BEFORE</div>
+        <div class="ba-tag ba-tag--r">AFTER</div>
+      </div>
+
+      <div class="pg-item ba-wrap">
+        <div class="ba-before"><img src="porche.jpg" alt="Porsche before detailing" /></div>
+        <div class="ba-after"><img src="porschebefore.jpg" alt="Porsche after detailing" /></div>
+        <div class="ba-handle">
+          <div class="ba-btn">
+            <div class="ba-arrow ba-arrow--l"></div>
+            <div class="ba-arrow ba-arrow--r"></div>
+          </div>
+        </div>
+        <div class="ba-tag ba-tag--l">BEFORE</div>
+        <div class="ba-tag ba-tag--r">AFTER</div>
+      </div>
+
+      <div class="pg-item ba-wrap">
+        <div class="ba-before"><img src="IMG_0753.jpg" alt="Engine before detailing" /></div>
+        <div class="ba-after"><img src="engine.jpg" alt="Engine after detailing" /></div>
+        <div class="ba-handle">
+          <div class="ba-btn">
+            <div class="ba-arrow ba-arrow--l"></div>
+            <div class="ba-arrow ba-arrow--r"></div>
+          </div>
+        </div>
+        <div class="ba-tag ba-tag--l">BEFORE</div>
+        <div class="ba-tag ba-tag--r">AFTER</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     REVIEWS
+══════════════════════════════════════ -->
+<section class="reviews sec" id="reviews">
+  <div class="wrap">
+    <p class="label">GOOGLE REVIEWS</p>
+    <h2>What San Diego Drivers<br>Are Saying</h2>
+    <div class="rev-meta">⭐⭐⭐⭐⭐ <strong>4.9</strong> · Average Google Review</div>
+
+    <!-- Elfsight Google Reviews widget -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-0ea20fa0-921b-4f4f-ac7b-5d155d614116" data-elfsight-app-lazy></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section class="about sec" id="about">
+  <div class="wrap about__in">
+
+    <div class="about__img-col">
+      <div class="about__img-wrap">
+        <img src="reliy pic.jpg" alt="Riley — Owner of Elevate SD Mobile Detail" />
+      </div>
+      <div class="about__cert glass">🏅 Gtechniq Certified</div>
+    </div>
+
+    <div class="about__text">
+      <p class="label">About</p>
+      <h2>Owner of <em>Elevate SD.</em></h2>
+      <p>Hi! I'm Riley, owner of Elevate SD Mobile Detail. I'm a San Diego native, born and raised in Poway, and I've been detailing cars since I was 14 years old.
+After more than 20 years in retail management, I decided it was time to pursue my true passion — cars. I've always loved everything about them, especially the transformation that happens when a vehicle is brought back to life. There's nothing better than seeing a car look the way it's meant to.</p>
+      <p>When I started this business, my dad gave me simple but powerful advice: "Take care of your customers and do right by them, and they will always come back."
+I've carried that with me every day, along with my mom's words growing up: "Do it right, or don't do it at all."
+At Elevate SD, those values are at the core of everything we do — we are here to do it right, the first time.</p>
+      <p>We're a small, owner-operated mobile detailing business based in San Diego. That means I'm the one showing up, I'm the one doing the work, and I'm standing behind every job. No subcontractors, no shortcuts, no surprises on the invoice.</p>
+      <div class="about__creds">
+        <span>75+ Five-Star Reviews</span>
+        <span>·</span>
+        <span>400+ Vehicles Detailed</span>
+        <span>·</span>
+        <span>100% Mobile Service</span>
+      </div>
+      <a href="#bquote" class="btn btn--blue">Book With Riley →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     BOTTOM QUOTE CTA
+══════════════════════════════════════ -->
+<section class="bquote sec" id="bquote">
+  <div class="wrap bquote__in">
+
+    <div class="bquote__left">
+      <p class="label urgency">LIMITED AVAILABILITY</p>
+      <h2>Your Car Our Expertise<br><em>We Handle Everything.</em></h2>
+      <p>Riley personally handles every vehicle — no subcontractors, no shortcuts. Spots fill fast each week across San Diego County.</p>
+      <ul class="bq-list">
+        <li>We bring our own water &amp; power — nothing needed from you</li>
+        <li>Responds within the hour</li>
+        <li>Same-week appointments available</li>
+        <li>Satisfaction guaranteed</li>
+      </ul>
+    </div>
+
+    <div class="bquote__form">
+      <form id="bform" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+        <input type="hidden" name="subject" value="New Quote – Elevate SD (Bottom)" />
+        <div class="frow">
+          <div class="fg"><input type="text" name="name"  placeholder="Your Name"    required /></div>
+          <div class="fg"><input type="tel"  name="phone" placeholder="Phone Number" required /></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><input type="text"  name="zip"   placeholder="ZIP Code" maxlength="5" required /></div>
+          <div class="fg"><input type="email" name="email" placeholder="Email Address"          required /></div>
+        </div>
+        <div class="fg"><input type="text" name="vehicle" placeholder="Vehicle Make &amp; Model" required /></div>
+        <div class="fg">
+          <select name="service" required>
+            <option value="" disabled selected>Choose a service…</option>
+            <option>Full Detail</option>
+            <option>Ceramic Coating</option>
+            <option>Paint Correction</option>
+            <option>Interior Only</option>
+            <option>Exterior Only</option>
+            <option>Not Sure — Need Advice</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--blue btn--full">Claim My Spot →</button>
+      </form>
+
+      <div class="form__ok" id="bok" style="display:none">
+        <div class="ok__icon">✓</div>
+        <h3>You're on the list!</h3>
+        <p>Riley will be in touch within the hour.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="wrap footer__in">
+
+    <div class="footer__col footer__brand">
+      <div class="footer__logo">
+        <img src="footerlogo.png" alt="Elevate SD Mobile Detail"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <span class="footer__logo-fb" style="display:none">Elevate SD</span>
+      </div>
+      <p>San Diego's premier mobile detailing service. Certified, insured, fully self-contained.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.69a8.28 8.28 0 0 0 4.84 1.54V6.79a4.85 4.85 0 0 1-1.08-.1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Service Area</h4>
+      <div class="footer__area-grid">
+        <ul>
+          <li>San Diego</li>
+          <li>Escondido</li>
+          <li>Santee</li>
+          <li>El Cajon</li>
+          <li>Encinitas</li>
+        </ul>
+        <ul>
+          <li>Carlsbad</li>
+          <li>Oceanside</li>
+          <li>Poway</li>
+          <li>Coronado</li>
+          <li>National City</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul class="footer__contact">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.09 6.09l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <a href="tel:+18582642774">(858) 264-2774</a>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <a href="mailto:riley@elevatesd.com">riley@elevatesd.com</a>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>All San Diego County</span>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Mon–Sat: 9am–6pm</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <div class="wrap">
+      <p>© 2025 Elevate SD Mobile Detail · All rights reserved · San Diego, CA</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     STICKY CTA (MOBILE)
+══════════════════════════════════════ -->
+<div class="sticky-cta" id="scta">
+  <a href="tel:+18582642774" class="btn btn--blue btn--full">📞 Call Now — Get a Free Quote</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
