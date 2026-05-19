@@ -1001,8 +1001,10 @@ em { font-style: italic; color: var(--blue-l); }
   transition: box-shadow .4s ease;
 }
 .about__img-wrap:hover { box-shadow: 0 40px 96px rgba(0,0,0,.65), 0 0 0 1px rgba(12,108,254,.12); }
-.about__img-wrap img { width: 100%; height: 100%; object-fit: cover; }
-
+.about__img-wrap img {
+  object-fit: contain; /* no cropping, no stretch */
+  background: var(--bg3); /* fills empty space around image */
+}
 .about__cert {
   padding: 13px 20px;
   text-align: center;
