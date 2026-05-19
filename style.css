@@ -1123,14 +1123,54 @@ em { font-style: italic; color: var(--blue-l); }
 }
 
 .footer__in {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 72px;
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
+.footer__contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+
+.footer__contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .81rem;
+  color: var(--t2);
+  padding: 0;
+  border-bottom: none;
+  transition: color .25s ease;
+  white-space: nowrap;
+}
+.footer__contact li:hover { color: var(--t1); padding-left: 0; }
+
+.footer__col h4 {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--t1);
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.footer__col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 28px; height: 1.5px;
+  background: linear-gradient(90deg, var(--blue), transparent);
+  border-radius: 2px;
+}
 /* Logo */
 .footer__logo { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
 .footer__logo img { height: 40px; width: auto; }
@@ -1181,18 +1221,19 @@ em { font-style: italic; color: var(--blue-l); }
 }
 
 /* Contact list */
-.footer__contact { display: flex; flex-direction: column; gap: 0; }
+.footer__contact { display: flex; flex-direction: column; gap: 8px; }
+
 .footer__contact li {
   display: flex;
   align-items: center;
-  gap: 13px;
-  font-size: .83rem;
+  gap: 10px;
+  font-size: .81rem;
   color: var(--t2);
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,.04);
-  transition: color .25s ease, padding-left .25s ease;
+  padding: 0;
+  border-bottom: none;
+  transition: color .25s ease;
 }
-.footer__contact li:last-child { border-bottom: none; }
+.footer__contact li:hover { color: var(--t1); padding-left: 0; }
 .footer__contact li:hover { color: var(--t1); padding-left: 4px; }
 
 .footer__contact li svg {
@@ -1324,4 +1365,10 @@ em { font-style: italic; color: var(--blue-l); }
   .photo-grid { grid-template-columns: 1fr; }
   .hero__form { padding: 28px 20px; }
   .bquote__form { padding: 26px 20px; }
+}
+
+.sticky-cta {
+  transition: opacity .4s ease;
+  pointer-events: none;
+  opacity: 0;
 }
